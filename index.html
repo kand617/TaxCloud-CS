@@ -1,7 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<title>React App</title>
+<link href="/static/css/main.bf842c01.css" rel="stylesheet">
+
+</head>
+
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<div id="apimatic" data-theme="light" data-apikey="MdSssIXdFaKeVjgVhHjkdtOVHL7iwPsAY6QUhiKo3IBsVHe8HXXUdUkTiEgwD75w">
+</div>
+  <script>window.onload=function(){
+     window.onload = function(){
+        var container = "apimatic";
+        var containerElement = document.getElementById(container);
+        var apiKey = containerElement.getAttribute('data-apikey');
+        var theme = containerElement.getAttribute('data-theme');
+        var options = {
+          container: container,
+          apiKey: apiKey,
+          theme: theme,
+          loadAllDocsOnInit:false,
+          customDocs:{
+            "angular_javascript_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/angular.md",
+            // "objc_cocoa_touch_ios_lib": "https://rawgit.com/kand617/TaxCloud-CS/master/objc.md",
+            // "cs_portable_net_lib": "https://rawgit.com/kand617/TaxCloud-CS/master/cs.md",
+            // "java_gradle_android_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/android.md",
+            // "java_eclipse_jre_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/java.md",
+            // "php_generic_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/php.md",
+            // "ruby_generic_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/ruby.md",
+            // "node_javascript_lib": "https://rawgit.com/kand617/TaxCloud-CS/master/node.md",
+            // "go_generic_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/go.md",
+            // "python_generic_lib":"https://rawgit.com/kand617/TaxCloud-CS/master/python.md",
+            // "docs-http": "https://rawgit.com/kand617/TaxCloud-CS/master/httpdocs.md",
+
+          }
+        }
+        APIMaticWidget.show(options);
+      }
+    
+    </script>
+    
+    <script type="text/javascript" src="/static/js/main.1e48cea2.js">
+    
+    </script>
+  
+  
+  </body>
+  
+  </html>
