@@ -28,8 +28,9 @@
         var options = {
           container: container,
           apiKey: apiKey,
-          theme: theme,
+          baseTheme: theme,
           loadAllDocsOnInit:false,
+          // allowedLanguages:["docs-http", "objc_cocoa_touch_ios_lib", "cs_portable_net_lib", "java_gradle_android_lib", "java_eclipse_jre_lib"],
           customDocs:{
             "angular_javascript_lib":"https://kand617.github.io/TaxCloud-CS/sdk-docs/angular.md",
             // "objc_cocoa_touch_ios_lib": "https://kand617.github.io/TaxCloud-CS/sdk-docs/objc.md",
@@ -43,6 +44,11 @@
             // "python_generic_lib":"https://kand617.github.io/TaxCloud-CS/sdk-docs/python.md",
             // "docs-http": "https://kand617.github.io/TaxCloud-CS/sdk-docs/httpdocs.md",
 
+          },
+          themeOverrides: {
+            // palette: {
+            //   primaryColor1: "#9C27B0",
+            // }
           }
         }
         APIMaticWidget.show(options);
